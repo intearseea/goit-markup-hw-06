@@ -8,6 +8,7 @@
   --ocean-blue: #404bbf;
   --gray-border: #8e8f99;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --footer-active: #31d0aa;
 }
 
 ul,
@@ -525,7 +526,18 @@ body {
   fill: var(--third-light-color-cloud);
 }
 
-.email-input {
+.subscribe-container {
+}
+
+.footer-paragraph {
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-light-color);
+}
+
+.subscribe-input {
   width: 264px;
   height: 40px;
   padding-left: 16px;
@@ -543,20 +555,20 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-footer .email-input::placeholder {
+.footer .subscribe-input::placeholder {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
   color: var(--main-light-color);
 }
 
-.subscribe-field {
+.subscribe-form {
   display: flex;
   align-items: center;
   gap: 24px;
 }
 
-.subscribe-button {
+.subscribe-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -578,8 +590,9 @@ footer .email-input::placeholder {
   border-style: none;
   cursor: pointer;
 }
-.subscribe-button:hover,
-.subscribe-button:focus {
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
   background-color: var(--ocean-blue);
 }
 
@@ -589,9 +602,9 @@ footer .email-input::placeholder {
   transition: fill var(--timing-function);
 }
 
-.subscribe-button:hover .subscribe-icon,
-.subscribe-button:focus .subscribe-icon {
-  fill: var(-);
+.subscribe-btn:hover .subscribe-icon,
+.subscribe-btn:focus .subscribe-icon {
+  fill: var(--footer-active);
 }
 /* FOOTER LOGO */
 .logo-footer {
@@ -759,7 +772,7 @@ footer .email-input::placeholder {
   z-index: 100;
   width: 100%;
   height: 100%;
-  padding: 72px 24px 24px 24px;
+
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(46, 47, 66, 0.4);
@@ -776,7 +789,7 @@ footer .email-input::placeholder {
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-
+  padding: 72px 24px 24px 24px;
   background-color: #fcfcfc;
 }
 .backdrop.is-hidden .modal {
@@ -823,7 +836,6 @@ footer .email-input::placeholder {
 }
 
 .modal-title {
-  margin-top: 72px;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -978,7 +990,7 @@ footer .email-input::placeholder {
   background-color: var(--iris);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: background-color var(--timing-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
