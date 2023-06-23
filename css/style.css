@@ -527,6 +527,7 @@ body {
 }
 
 .subscribe-container {
+  margin-left: 80px; ;
 }
 
 .footer-paragraph {
@@ -553,6 +554,7 @@ body {
   border: 1px solid #ffffff;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .subscribe-input::placeholder {
@@ -582,7 +584,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--main-background-color);
+  color: var(--main-light-color);
 
   background-color: var(--iris);
   transition: background-color var(--timing-function);
@@ -591,20 +593,20 @@ body {
   cursor: pointer;
 }
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-  background-color: var(--ocean-blue);
+.subscribe-input:focus {
+  border: 1px solid var(--iris);
+  outline: none;
 }
 
 .subscribe-icon {
   margin-left: 16px;
-  fill: var(--ocean-blue);
-  transition: fill var(--timing-function);
-}
+  fill: var(--main-light-color);
+c}
 
-.subscribe-btn:hover .subscribe-icon,
-.subscribe-btn:focus .subscribe-icon {
-  fill: var(--footer-active);
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--ocean-blue);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* FOOTER LOGO */
 .logo-footer {
