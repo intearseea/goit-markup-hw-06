@@ -752,3 +752,169 @@ body {
 .icon-close-black-18dp-2-1 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-title {
+  margin-top: 72px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--dark-background-color);
+}
+
+.modal-field-wrap {
+  margin-bottom: 8px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--customers-color);
+}
+
+.input-field {
+  display: inline-block;
+  height: 40px;
+  padding-left: 38px;
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--dark-background-color);
+  background-color: transparent;
+  transition: border-color var(--transition);
+  outline: transparent;
+}
+
+.input-field:focus {
+  border-color: var(--accent-color);
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input-wrap:focus-within .input-icon {
+  fill: var(--accent-color);
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: var(--dark-background-color);
+  transition: fill var(--transition);
+}
+
+.modal-comment-wrap {
+  margin-bottom: 16px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.comment {
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  resize: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  transition: border-color var(--transition);
+  outline: transparent;
+}
+
+.comment:focus {
+  border-color: var(--accent-color);
+}
+
+.comment::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.checkbox-wrap {
+  margin-bottom: 24px;
+}
+
+.policy {
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--customers-color);
+}
+
+.policy-link {
+  color: var(--accent-color);
+}
+
+.policy-custom-field {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  cursor: pointer;
+
+  background-color: transparent;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .policy > .policy-custom-field {
+  background-color: var(--active);
+  border: none;
+  fill: var(--light-background-color);
+}
+
+.checkbox:focus-visible + .policy > .policy-custom-field {
+  outline: 2px solid rgba(77, 90, 229, 0.5);
+}
+
+.submit-modal-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin: auto auto;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--main-background-color);
+
+  border-style: none;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color var(--transition);
+  cursor: pointer;
+}
+
+.submit-modal-button:hover,
+.submit-modal-button:focus {
+  background-color: var(--active);
+}
