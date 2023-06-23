@@ -497,8 +497,29 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-container">
+          <p class="sm-text">Subscribe</p>
+          <form class="subscribe-form">
+            <label class="subscribe-label">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -521,7 +542,9 @@
                 name="user-name"
               />
               <svg class="input-icon" width="18" height="24">
-                <use href="./images/icons.svg#name"></use>
+                <use
+                  href="./images/symbol-defs-modal.svg#icon-person-black-18dp-1"
+                ></use>
               </svg>
             </div>
           </div>
@@ -536,7 +559,9 @@
                 name="user-phone"
               />
               <svg class="input-icon" width="18" height="24">
-                <use href="./images/icons.svg#phone"></use>
+                <use
+                  href="./images/symbol-defs-modal.svg#icon-phone-black-18dp-1"
+                ></use>
               </svg>
             </div>
           </div>
@@ -551,7 +576,9 @@
                 name="user-email"
               />
               <svg class="input-icon" width="18" height="24">
-                <use href="./images/icons.svg#email"></use>
+                <use
+                  href="./images/symbol-defs-modal.svg#icon-email-black-18dp-1"
+                ></use>
               </svg>
             </div>
           </div>
@@ -577,7 +604,9 @@
             <label class="policy" for="user-privacy">
               <span class="policy-custom-field">
                 <svg class="policy-icon" width="10" height="8">
-                  <use href="./images/icons.svg#check"></use>
+                  <use
+                    href="./images/symbol-defs-modal.svg#icon-Vector-1"
+                  ></use>
                 </svg>
               </span>
               I accept the terms and conditions of the&nbsp;<a
